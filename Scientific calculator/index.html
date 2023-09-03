@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title> scientific calculator</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <form name="calculator" class="container">
+        <h1>casio</h1>
+
+        <div id="display">
+            <input type="text" id="dis" name="input">
+        </div>
+        <div id="btns">
+            <button class="btn" type="button" value="" onclick="sin()">sin</button>
+            <button class="btn" type="button" value="" onclick="cos()">cos</button>
+            <button class="btn" type="button" value="" onclick="tan()">tan</button>
+            <button class="btn" type="button" value="x!" onclick="fact()">x!</button>
+            <button class="btn" type="button" value="" onclick="sq()">x<sup>2</sup></button>
+        </div>
+        <div id="btns">
+            <button class="btn" type="button" value="" onclick="sinh()">sinh</button>
+            <button class="btn" type="button" value="" onclick="cosh()">cosh</button>
+            <button class="btn" type="button" value="" onclick="tanh()">tanh</button>
+            <button class="btn" type="button" value="" onclick="log()">log</button>
+            <button class="btn" type="button" value="" onclick="qubic()">x<sup>3</sup></button>
+
+        </div>
+
+        <div id="btns">
+            <button class="btn n" type="button" value="1" onclick="calculator.input.value += '1'">1</button>
+            <button class="btn n" type="button" value="2" onclick="calculator.input.value += '2'">2</button>
+            <button class="btn n" type="button" value="3" onclick="calculator.input.value += '3'">3</button>
+            <button class="btn" type="button" value="+" onclick="calculator.input.value += '+'">+</button>
+            <button class="btn" onclick='reciproc()'><sup>1</sup>/<sub>x</sub></button>
+
+        </div>
+        <div id="btns">
+
+            <button class="btn n" type="button" value="4" onclick="calculator.input.value += '4'">4</button>
+            <button class="btn n" type="button" value="5" onclick="calculator.input.value += '5'">5</button>
+            <button class="btn n" type="button" value="6" onclick="calculator.input.value += '6'">6</button>
+            <button class="btn" type="button" value="-" onclick="calculator.input.value += '-'">-</button>
+            <button class="btn" type="button" value="" onclick="pi()">&pi;</button>
+
+        </div>
+
+        <div id="btns">
+            <button class="btn n" type="button" value="7" onclick="calculator.input.value += '7'">7</button>
+            <button class="btn n" type="button" value="8" onclick="calculator.input.value += '8'">8</button>
+            <button class="btn n" type="button" value="9" onclick="calculator.input.value += '9'">9</button>
+            <button class="btn" type="button" value="*" onclick="calculator.input.value += '*'">*</button>
+            <button class="btn" onclick='round()'><small>Rnd</small></button>
+
+        </div>
+
+        <div id="btns">
+
+            <button class="btn" type="button" value="(" onclick="calculator.input.value += '('">(</button>
+            <button class="btn n" type="button" value="0" onclick="calculator.input.value += '0'">0</button>
+            <button class="btn" type="button" value=")" onclick="calculator.input.value += ')'">)</button>
+            <button class="btn" type="button" value="/" onclick="calculator.input.value += '/'">/</button>
+            <button class="btn" type="button" value="" onclick="radic()">&radic;</button>
+        </div>
+
+        <div id="btns">
+            <button class="btn" type="button" value="" onclick="backspace()"> &#8592</button>
+            <button class="btn" type="button" onclick="(calculator.input.value += '00')">00</button>
+            <button class="btn" type="button" value="." onclick="calculator.input.value += '.'">.</button>
+            <button class="btn" type="button" value="C" onclick="calculator.input.value = ''">C</button>
+            <button class="btn" type="button" value="="
+                onclick="calculator.input.value = eval(calculator.input.value)">=</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
