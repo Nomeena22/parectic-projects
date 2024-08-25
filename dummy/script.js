@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 duration: 0.5,
                 scale: 1.1,
                 boxShadow: "0 8px 30px rgba(0, 0, 0, 0.6)",
-                ease: "power2.out",
+                ease: "power4.out",
             });
         });
 
