@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
             amount: 0.5,
             from: "center"
         },
-        ease: "power3.out",
+        ease: "power2.out",
     });
 
     const photos = document.querySelectorAll(".photo-container");
